@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valorant Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <style>
+    .card-img-container {
+      height: 200px;
+      /* border: 2px solid red; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .blue-bg {
+      background-color: #2e456b;
+      color: white;
+    }
+
+    .pink-bg {
+      background-color: #ef17ff;
+      color: white;
+    }
+
+    .black-bg {
+      background-color: black;
+      color: white;
+    }
+
+    .purple-bg {
+      background-color: #9458db;
+      color: white;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="./images/latest.png" alt="" width="100" height="100" class="d-inline-block align-text-top">
+          <span class="ms-4">Skin Shop</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Valorant Points</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Season</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Download</a>
+            </li>
+
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-5">
+    <!-- Carousal start here  -->
+    <div id="carouselExampleControls" class="carousel slide bg-dark text-white" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row p-5 d-flex align-items-center">
+            <div class="col-lg-4">
+              <h1>Origin (Evolves)</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+              <h2>7100 vp</h2>
+              <button type="button" class="btn btn-danger mt-3">Buy Now</button>
+            </div>
+            <div class="col-lg-8">
+              <img src="./images/banner/E3eCTmFX0AMZ6Lh.jpeg.webp" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row p-5 d-flex align-items-center">
+            <div class="col-lg-4">
+              <h1>Elderflame (Evolves)</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sapiente velit soluta est aliquam
+                veritatis ullam consectetur porro quos quas? Id sapiente aliquid molestiae eligendi, nemo placeat
+                corrupti reiciendis impedit.</p>
+              <h2>7100 vp</h2>
+              <button type="button" class="btn btn-danger mt-3">Buy Now</button>
+            </div>
+            <div class="col-lg-8">
+              <img src="./images/banner/elderflame-collection-valorant.webp" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row p-5 d-flex align-items-center">
+            <div class="col-lg-4">
+              <h1>Oni (Evolves)</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sapiente velit soluta est aliquam
+                veritatis ullam consectetur porro quos quas? Id sapiente aliquid molestiae eligendi, nemo placeat
+                corrupti reiciendis impedit.</p>
+              <h2>7100 vp</h2>
+              <button type="button" class="btn btn-danger mt-3">Buy Now</button>
+            </div>
+            <div class="col-lg-8">
+              <img src="./images/banner/oni-collection-valorant.webp" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Carousal end here  -->
+
+    <!-- Category start here -->
+    <section class="container mt-5">
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 col-sm-12">
+          <div class="p-3 border blue-bg d-flex align-items-center justify-content-between rounded-3"
+            style="height: 100px;">
+            <h2>Melee</h2>
+            <img src="./images/melee/Reaver_Knife.png" style="width: 50%;" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-sm-12">
+          <div class="p-3 border pink-bg d-flex align-items-center justify-content-between rounded-3"
+            style="height: 100px;">
+            <h2>Rifles</h2>
+            <img src="./images/rifles/Glitchpop_Vandal.png" style="width: 50%;" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-sm-12">
+          <div class="p-3 border black-bg d-flex align-items-center justify-content-between rounded-3"
+            style="height: 100px;">
+            <h2>Sniper</h2>
+            <img src="./images/operator/Glitchpop_Operator.png" style="width: 50%;" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-sm-12">
+          <div class="p-3 border purple-bg d-flex align-items-center justify-content-between rounded-3"
+            style="height: 100px;">
+            <h2>Arms</h2>
+            <img src="./images/side-arms/Prime_Classic.png" style="width: 50%;" alt="">
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Category ends here  -->
+
+    <!-- Melee cards -->
+    <section class="container mt-5">
+      <h1>Melee</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-lg">
+            <div class="card-img-container">
+              <img src="./images/melee/BlastX_Polymer_Knifetech_Coated_Knife.png" class="card-img-top valo-card-img"
+                alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">BlastX Polymer</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content.</p>
+              <h5>1775VP</h5>
+            </div>
+            <div class="p-3">
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-lg">
+            <div class="card-img-container">
+              <img src="./images/melee/Forsaken_Ritual_Blade.png" class="card-img-top valo-card-img" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Forsaken Ritual</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5>1775 VP</h5>
+            </div>
+            <div class="p-3">
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-lg">
+            <div class="card-img-container">
+              <img src="./images/melee/Glitchpop_Axe.png" class="card-img-top valo-card-img" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Glitchpop</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5>1775 VP</h5>
+            </div>
+            <div class="p-3">
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-lg">
+            <div class="card-img-container">
+              <img src="./images/melee/Reaver_Knife.png" class="card-img-top valo-card-img" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Reaver Knife</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5>1775 VP</h5>
+            </div>
+            <div class="p-3">
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- melee cards section ends   -->
+
+    <!-- Rifels cards  -->
+    <section class="container mt-5">
+      <h1>Melee</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-lg">
+            <div class="card-img-container">
+              <img src="./images/rifles/bulldog.png" class="card-img-top" alt="...">
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Spectrum Bulldog</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5>1775VP</h5>
+            </div>
+            <div class="p-3">
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-lg">
+            <div class="card-img-container">
+              <img src="./images/rifles/Glitchpop_Vandal.png" class="card-img-top" alt="...">
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Glitchpop Vandal</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5>1775 VP</h5>
+            </div>
+            <div class="p-3">
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-lg">
+            <div class="card-img-container">
+              <img src="./images/rifles/Guardian.png" class="card-img-top" alt="...">
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Guardian</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5>1775 VP</h5>
+            </div>
+            <div class="p-3">
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-lg">
+            <div class="card-img-container">
+              <img src="./images/rifles/phantom.png" class="card-img-top" alt="...">
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Oni Phantom</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5>1775 VP</h5>
+            </div>
+            <div class="p-3">
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- Riflels End here  -->
+
+    <!-- Sniper Start here  -->
+    <section class="container mt-5">
+      <h1>Sniper Rifles</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-lg">
+            <div class="card-img-container">
+              <img src="./images/operator/Elderflame_Operator.png" class="card-img-top" alt="...">
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Elderflame Operator</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5>2475 VP</h5>
+
+            </div>
+            <div class="p-3">
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-lg">
+            <div class="card-img-container">
+              <img src="./images/operator/Glitchpop_Operator.png" class="card-img-top" alt="...">
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Glitchpop Operator</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5>2175 VP</h5>
+            </div>
+            <div class="p-3">
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-lg">
+            <div class="card-img-container">
+              <img src="./images/operator/Gravitational_Uranium_Neuroblaster_Operator.png" class="card-img-top"
+                alt="...">
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Gravitational Uranium Operator</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5>1775 VP</h5>
+            </div>
+            <div class="p-3">
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-lg">
+            <div class="card-img-container">
+              <img src="./images/operator/Ion_Operator.png" class="card-img-top" alt="...">
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Ion Operator</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5>1775 VP</h5>
+            </div>
+            <div class="p-3">
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- Sniper end here  -->
+
+    <!-- Side arm start here  -->
+    <section class="container mt-5">
+      <h1>Side Arms</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-lg">
+            <div class="card-img-container">
+              <img src="./images/side-arms/BlastX_Frenzy.png" class="card-img-top" alt="...">
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">BlastX Frenzy</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5>1775VP</h5>
+            </div>
+            <div class="p-3">
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-lg">
+            <div class="card-img-container">
+              <img src="./images/side-arms/Ion_Sheriff.png" class="card-img-top" alt="...">
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Ion Sherif</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5>1775 VP</h5>
+            </div>
+            <div class="p-3">
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-lg">
+            <div class="card-img-container">
+              <img src="./images/side-arms/Magepunk_Ghost.png" class="card-img-top" alt="...">
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">MegaPunk Ghost</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5>1775 VP</h5>
+            </div>
+            <div class="p-3">
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-lg">
+            <div class="card-img-container">
+              <img src="./images/side-arms/Spline_Classic.png" class="card-img-top" alt="...">
+
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Spline Classic</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5>1775 VP</h5>
+            </div>
+            <div class="p-3">
+              <button type="button" class="btn btn-danger">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- Side arm end here  -->
+
+    <!-- subscribe start  -->
+
+    <section class="container d-flex bg-primary justify-content-center align-items-center mt-5" style="height: 300px;">
+      <div class="">
+        <h1 class="text-white">Lets Play Valorant</h1>
+        <p class="text-white">Join Our Discord Server</p>
+        <input class="form-control" type="text" name="" id="">
+        <br>
+        <button type="button" class="btn btn-danger ">Buy Now</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="text-center mt-5">All rights reserved by © Skin Shop</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
